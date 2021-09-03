@@ -1,0 +1,10 @@
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\bin\Debug\AutoTyperBot.exe.config
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\bin\Debug\AutoTyperBot.exe
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\bin\Debug\AutoTyperBot.pdb
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\obj\Debug\AutoTyperBot.Properties.Resources.resources
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\obj\Debug\AutoTyperBot.csproj.GenerateResource.cache
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\obj\Debug\AutoTyperBot.csproj.CoreCompileInputs.cache
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\obj\Debug\AutoTyperBot.exe
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\obj\Debug\AutoTyperBot.pdb
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\obj\Debug\AutoTyperBot.Main.resources
+C:\Users\Chris\source\repos\AutoTyperBot\AutoTyperBot\obj\Debug\AutoTyperBot.csproj.AssemblyReference.cache
