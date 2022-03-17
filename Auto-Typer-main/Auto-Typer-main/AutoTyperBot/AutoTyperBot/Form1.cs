@@ -23,37 +23,16 @@ namespace AutoTyperBot
         }
 
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-
         public async void button1_Click(object sender, EventArgs e)
         {
-            
-             
-            
-                
-            bool buttonPressed = false;
 
             int buttonDelay;
 
             buttonDelay = Slider.Value;
-
-
-            this.KeyPreview = true;
-
+            MessageBox.Show($"Typing will start after {buttonDelay} Miliseconds");
 
             await Task.Delay(buttonDelay);
-            buttonPressed = true;
-
-
-            if (buttonDelay < 0) 
-            {
-                buttonPressed = true;
-            }
-
+        
             timer1.Start();
 
             buttonDelay = Slider.Value = Convert.ToInt32(Number.Text = buttonDelay.ToString());
@@ -63,65 +42,39 @@ namespace AutoTyperBot
         }
 
 
-        //  public void button1_click() { }
-
-
-
         public void Slider_ValueChanged(object sender, EventArgs e)
         {
-
-            //Number = the text box
-            //Slider = the slider xd
-
-
-
-
-
-
-
             Number.Text = Slider.Value.ToString();
 
-
-
-
-
-
-            //  Number.Text = Slider.Value.ToString();
-
-
-
-
-
         }
-
-
 
         private void StopButton_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Typing has Stopped");
         }
 
         public void timer1_Tick_1(object sender, EventArgs e)
         {
+            int delay;
+            delay = Slider.Value;
+            bool canSend = true;
+            if (canSend == true) 
+            {
+                
+               SendKeys.Send(textBox1.Text);
+               SendKeys.Send("{Enter}");
 
-            SendKeys.Send(textBox1.Text);
-            SendKeys.Send("{Enter}");
+                canSend = false;
+                canSend.ToString();
 
+                timer1.Stop();
+                Task.Delay(delay).Wait();
 
-        }
+                timer1.Start();
+  
+            }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -135,49 +88,12 @@ namespace AutoTyperBot
             }
 
 
-
-
-
-
-
-
-
-
-
-
             if (e.Control == true && e.KeyCode == Keys.K)
             {
 
                 StartButton.PerformClick();
 
-
-
-
-
-
             }
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Slider_Scroll(object sender, EventArgs e)
-        {
-
-
-
-
-        }
-
-        public void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-
-
 
         }
 
@@ -215,60 +131,8 @@ namespace AutoTyperBot
                 }
             }
 
-
-
-
-        }
-
-        public void button2_Click(object sender, EventArgs e)
-        {
-
-
-
         }
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

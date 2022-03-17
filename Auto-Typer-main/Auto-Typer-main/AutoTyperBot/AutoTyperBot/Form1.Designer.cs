@@ -57,6 +57,7 @@ namespace AutoTyperBot
             // StartButton
             // 
             this.StartButton.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartButton.ForeColor = System.Drawing.Color.Black;
             this.StartButton.Location = new System.Drawing.Point(23, 258);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(157, 32);
@@ -79,13 +80,13 @@ namespace AutoTyperBot
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(60, 134);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F);
+            this.textBox1.Location = new System.Drawing.Point(23, 132);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(327, 50);
+            this.textBox1.Size = new System.Drawing.Size(400, 67);
             this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+         //   this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // timer1
             // 
@@ -94,26 +95,27 @@ namespace AutoTyperBot
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(137, 35);
+            this.label2.Location = new System.Drawing.Point(119, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 36);
+            this.label2.Size = new System.Drawing.Size(205, 36);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Auto Typer";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Text = "Type To Write";
+        //    this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Number
             // 
             this.Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number.Location = new System.Drawing.Point(92, 432);
+            this.Number.Location = new System.Drawing.Point(98, 498);
             this.Number.Multiline = true;
             this.Number.Name = "Number";
             this.Number.Size = new System.Drawing.Size(243, 44);
             this.Number.TabIndex = 5;
             this.Number.Text = "0";
             this.Number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+         //   this.Number.TextChanged += new System.EventHandler(this.Number_TextChanged);
             // 
             // Slider
             // 
@@ -122,7 +124,7 @@ namespace AutoTyperBot
             this.Slider.Name = "Slider";
             this.Slider.Size = new System.Drawing.Size(327, 45);
             this.Slider.TabIndex = 6;
-            this.Slider.Scroll += new System.EventHandler(this.Slider_Scroll);
+         //   this.Slider.Scroll += new System.EventHandler(this.Slider_Scroll);
             this.Slider.ValueChanged += new System.EventHandler(this.Slider_ValueChanged);
             // 
             // label1
@@ -131,23 +133,25 @@ namespace AutoTyperBot
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(284, 450);
+            this.label1.Location = new System.Drawing.Point(290, 516);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "ms";
+        //    this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(118, 393);
+            this.label4.Location = new System.Drawing.Point(124, 459);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(195, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Configurable Delay";
+          //  this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panelDrop
             // 
@@ -244,7 +248,7 @@ namespace AutoTyperBot
             this.button2.TabIndex = 10;
             this.button2.Text = "CTRL + F1";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+        //    this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.StartButton_KeyDown);
             // 
             // button1
@@ -272,7 +276,7 @@ namespace AutoTyperBot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(449, 647);
             this.Controls.Add(this.panelDrop);
             this.Controls.Add(this.label4);
@@ -283,11 +287,12 @@ namespace AutoTyperBot
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.StopButton);
             this.Controls.Add(this.StartButton);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Text = "Auto Typer";
-            this.Load += new System.EventHandler(this.Form1_Load);
+        //    this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Slider)).EndInit();
             this.panelDrop.ResumeLayout(false);
             this.ResumeLayout(false);
